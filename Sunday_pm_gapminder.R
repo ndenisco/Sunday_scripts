@@ -6,6 +6,8 @@
 # Read in data as tab-delimited
 gap.in <- read.table("output/combined_gapMinder.tsv", sep ="\t", header=TRUE)
 
+install.packages("dplyr", dependecies=TRUE)
+
 for (row.number in 1:10){
   for (col.number in 1:5){
     print(gap.in[row.number, col.number])
